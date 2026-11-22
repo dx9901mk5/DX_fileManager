@@ -3,11 +3,11 @@
 > [!IMPORTANT]
 > **發布通道轉移公告 / Release Channel Notice**
 > - **Google Play 正式版通過審核後，本 GitHub 儲存庫 Releases 將僅保留「DX Shizuku 輔助安裝器 (`DX_Helper`)」**，主程式將統一移至 Google Play 商店發行，並於本頁面放上正式版 Google Play 商店連結（`https://play.google.com/store/apps/details?id=com.dx9901mk5.filemanager`，審核通過後正式啟用）。
-> - 目前提供的 GitHub 版主程式 APK（`DX_fileManager-v*-full-release.apk`）為過渡預覽版本，**內建 16 天使用期限**。
+> - 目前提供的 GitHub 版主程式 APK（`DX_fileManager-v*-full-release.apk`）為過渡預覽版本，**可用至 2026/12/10 到期**。
 >
 > ---
 > - **Once the Google Play release passes review, GitHub Releases will retain ONLY the "DX Shizuku Helper (`DX_Helper`)" plugin.** The main app will be distributed exclusively via Google Play, and the official Play Store link will be posted right here.
-> - Current GitHub full-edition APKs (`DX_fileManager-v*-full-release.apk`) are transitional preview builds with a **built-in 16-day usage limit**.
+> - Current GitHub full-edition APKs (`DX_fileManager-v*-full-release.apk`) are transitional preview builds **valid until 2026/12/10**.
 
 一個專為 Android 設計的高效率多視窗／多面板檔案管理器，結合本機檔案管理、雲端與網路掛載、自由小視窗拖曳桌面捷徑、Shizuku 靜默安裝與 AI 檔案整理助理，並支援繁體中文、简体中文、English、日本語四國語言即時切換。
 
@@ -46,7 +46,7 @@ A high-efficiency multi-pane & freeform-window file manager for Android featurin
 - **Google Play 正式版**（審核通過後正式開放）：[Google Play Store](https://play.google.com/store/apps/details?id=com.dx9901mk5.filemanager)
 - 前往 [GitHub Releases](https://github.com/dx9901mk5/DX_fileManager/releases/latest) 可下載（皆為固定簽名，可直接覆蓋更新；**Play 正式通過後 GitHub 僅保留第 2 項輔助安裝器**）：
 
-1. **DX 檔案管理器 GitHub 過渡版（主程式，內建 16 天使用期限）**：`DX_fileManager-v<version>-full-release.apk`
+1. **DX 檔案管理器 GitHub 過渡版（主程式，可用至 2026/12/10）**：`DX_fileManager-v<version>-full-release.apk`
    - Play 審核通過前之過渡完整版主程式，到期後請改用 Google Play 正式版。
 2. **DX Shizuku 輔助安裝器（Play 正式通過後唯一保留於 GitHub 之外掛）**：`DX_Helper-v<version>-release.apk`
    - 本 App 為 **DX檔案管理器 專屬的 Shizuku 輔助用安裝器**，**同時支援 Google Play 版與 GitHub 版主程式**。
@@ -55,7 +55,7 @@ A high-efficiency multi-pane & freeform-window file manager for Android featurin
 
 - **Official Google Play Edition** (available once Play review is approved): [Google Play Store](https://play.google.com/store/apps/details?id=com.dx9901mk5.filemanager)
 - Download the signed APKs from [GitHub Releases](https://github.com/dx9901mk5/DX_fileManager/releases/latest) (**Once Google Play is approved, only `DX_Helper` will remain on GitHub**):
-  - **`DX_fileManager-v<version>-full-release.apk`**: Transitional GitHub full edition (**16-day built-in usage limit**).
+  - **`DX_fileManager-v<version>-full-release.apk`**: Transitional GitHub full edition (**valid until 2026/12/10**).
   - **`DX_Helper-v<version>-release.apk`**: Dedicated Shizuku helper installer plugin for **DX File Manager** (works with both the **Google Play edition** and the **GitHub edition**—when installed, the Play edition automatically detects the plugin and reveals the Shizuku APK install option in the context menu; includes built-in GitHub self-update check & download/install).
 
 ---
