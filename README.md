@@ -1,74 +1,73 @@
 # DX檔案管理器 (DX File Manager)
 
 > [!IMPORTANT]
-> **發布通道轉移公告 / Release Channel Notice**
-> - **Google Play 正式版通過審核後，本 GitHub 儲存庫 Releases 將僅保留「DX Shizuku 輔助安裝器 (`DX_Helper`)」**，主程式將統一移至 Google Play 商店發行，並於本頁面放上正式版 Google Play 商店連結（`https://play.google.com/store/apps/details?id=com.dx9901mk5.filemanager`，審核通過後正式啟用）。
-> - 目前提供的 GitHub 版主程式 APK（`DX_fileManager-v*-full-release.apk`）為過渡預覽版本，**可用至 2026/12/10 到期**。
+> **發布通道公告 / Release Channel Notice**
+> - **DX檔案管理器 主程式已全面移至 Google Play 商店發行**，本 GitHub 儲存庫**已移除所有主程式 APK 並停止於 GitHub 更新主程式**。
+> - 本倉庫 Releases **僅維持提供專屬外掛「DX輔助助手 (`DX_Helper`)」**。
 >
 > ---
-> - **Once the Google Play release passes review, GitHub Releases will retain ONLY the "DX Shizuku Helper (`DX_Helper`)" plugin.** The main app will be distributed exclusively via Google Play, and the official Play Store link will be posted right here.
-> - Current GitHub full-edition APKs (`DX_fileManager-v*-full-release.apk`) are transitional preview builds **valid until 2026/12/10**.
+> - **The main DX File Manager app is now distributed exclusively via Google Play.** All main-app APKs have been removed from GitHub Releases and will no longer be updated here.
+> - GitHub Releases **now hosts ONLY the companion plugin `DX_Helper`**.
 
-一個專為 Android 設計的高效率多視窗／多面板檔案管理器，結合本機檔案管理、雲端與網路掛載、自由小視窗拖曳桌面捷徑、Shizuku 靜默安裝與 AI 檔案整理助理，並支援繁體中文、简体中文、English、日本語四國語言即時切換。
-
-A high-efficiency multi-pane & freeform-window file manager for Android featuring local storage management, cloud/network mounts, drag-to-desktop shortcuts, Shizuku silent APK installation, AI file organization assistant, and instant 4-language UI switching (Traditional Chinese, Simplified Chinese, English, Japanese).
+一個專為 Android 設計的高效率多視窗／多面板檔案管理器，結合本機檔案管理、雲端與網路掛載（Google Drive、OneDrive、SMB、SFTP、FTP、WebDAV）、自由小視窗拖曳桌面捷徑、AI 檔案整理助理與四國語言即時切換。
 
 ---
 
-## 主要功能 / Key Features
+## 參加 Google Play 封閉測試（三步驟）/ Join Google Play Closed Testing (3 Steps)
 
-- **多面板與自由小視窗操作 / Multi-Pane & Freeform Window**
-  - 支援雙／三面板瀏覽、側邊欄快速導覽與自訂比例；可開啟多個 `WINDOWING_MODE_FREEFORM` 自由小視窗進行跨視窗與跨 App 拖曳。
-  - Dual/three-pane browsing with customizable ratios, plus multiple `WINDOWING_MODE_FREEFORM` small windows for cross-window and cross-app drag-and-drop.
-- **雙指／滑過多選與拖曳手勢 / Multi-Select & Drag Gestures**
-  - 長壓 `0.75s` 進入多選，支援第二指點擊與滑過多選；手指停頓 `350ms` 後再移動即鎖定為純拖曳模式，避免誤選其他檔案。
-  - Long-press (`0.75s`) to enter multi-select with second-finger tap and sweep-select; pausing for `350ms` and moving locks into pure drag mode.
-- **任意檔案／資料夾桌面捷徑 / Drag-to-Desktop Shortcuts**
-  - 拖曳任何檔案或資料夾出小視窗至桌面（或從功能表／底部操作列點擊「在桌面建立捷徑」），支援圖片／影片縮圖、APK 圖示與各類檔案專屬圖示，多選複合類別時自動批次建立。
-  - Drag any file or folder out to the launcher desktop (or use the context menu / bottom bar action) to pin shortcuts with real thumbnails, APK icons, or type badges; multi-select supports batch shortcut creation.
-- **雲端與網路掛載 / Cloud & Network Mounts**
-  - 支援 Google Drive（OAuth 2.0）、OneDrive（PKCE）、SMB（SMBv2/v3 區網掃描、網域/訪客匿名登入、大檔串流與同掛載移動）、SFTP、FTP、WebDAV。
-  - Built-in support for Google Drive (OAuth 2.0), OneDrive (PKCE), SMB (SMBv2/v3 LAN scan, Domain/Guest login, true streaming & server-side move), SFTP, FTP, and WebDAV.
-- **AI 檔案整理助理 / AI File Assistant**
-  - 支援 Gemini、DeepSeek、GPT (OpenAI)、Claude、Grok 與深度思考模式，協助分類、重命名與整理建議。
-  - Integrates Gemini, DeepSeek, GPT (OpenAI), Claude, and Grok with optional thinking mode for smart organization.
-- **Shizuku 靜默安裝與應用管理 / Shizuku Silent Install & App Manager**
-  - 支援透過 Shizuku 靜默批次安裝 APK、已安裝應用檢視與備份匯出。
-  - Batch silent APK installation via Shizuku, plus installed app inspection and APK backup export.
-- **垃圾桶與加解密壓縮 / Recycle Bin, Crypto & Archives**
-  - 內建 `.dx_trash` 30 天自動清理垃圾桶、ZIP/7Z/TAR 壓縮解壓縮與 `.dxe` AES-256 檔案加解密。
-  - 30-day `.dx_trash` recycle bin, ZIP/7Z/TAR archive support, and `.dxe` AES-256 encryption/decryption.
+目前 Google Play 版處於封閉測試階段，請依序完成以下三個步驟即可從 Google Play 商店下載體驗：
+
+1. **步驟 1｜加入測試人員 Google 群組**  
+   👉 [https://groups.google.com/g/dx-file-manager-testers](https://groups.google.com/g/dx-file-manager-testers)  
+   （群組信箱：`dx-file-manager-testers@googlegroups.com`，請使用與手機 Play 商店相同的 Google 帳號點擊「加入群組」）
+2. **步驟 2｜成為測試人員（網頁確認加入）**  
+   👉 [https://play.google.com/apps/testing/com.dx9901mk5.filemanager](https://play.google.com/apps/testing/com.dx9901mk5.filemanager)  
+   （點擊頁面中的「成為測試人員」按鈕）
+3. **步驟 3｜前往 Google Play 商店下載安裝**  
+   👉 [https://play.google.com/store/apps/details?id=com.dx9901mk5.filemanager](https://play.google.com/store/apps/details?id=com.dx9901mk5.filemanager)
 
 ---
 
-## 下載與安裝 / Download & Install
-
-- **Google Play 正式版**（審核通過後正式開放）：[Google Play Store](https://play.google.com/store/apps/details?id=com.dx9901mk5.filemanager)
-- 前往 [GitHub Releases](https://github.com/dx9901mk5/DX_fileManager/releases/latest) 可下載（皆為固定簽名，可直接覆蓋更新；**Play 正式通過後 GitHub 僅保留第 2 項輔助安裝器**）：
-
-1. **DX 檔案管理器 GitHub 過渡版（主程式，可用至 2026/12/10）**：`DX_fileManager-v<version>-full-release.apk`
-   - Play 審核通過前之過渡完整版主程式，到期後請改用 Google Play 正式版。
-2. **DX Shizuku 輔助安裝器（Play 正式通過後唯一保留於 GitHub 之外掛）**：`DX_Helper-v<version>-release.apk`
-   - 本 App 為 **DX檔案管理器 專屬的 Shizuku 輔助用安裝器**，**同時支援 Google Play 版與 GitHub 版主程式**。
-   - **支援 Google Play 版觸發能力**：安裝此輔助安裝器並授權 Shizuku 後，Google Play 版 DX檔案管理器 會自動偵測此外掛；當您在 Play 版內長壓任何 `.apk` 檔案時，功能選單會自動出現 **「用 DX Shizuku 靜默安裝」** 選項供選擇安裝 APK。
-   - **外掛自我更新**：DX Shizuku 安裝助手內建「檢查外掛更新 (GitHub)」按鈕，可自動檢查 GitHub 最新外掛版本並下載安裝。
-
-- **Official Google Play Edition** (available once Play review is approved): [Google Play Store](https://play.google.com/store/apps/details?id=com.dx9901mk5.filemanager)
-- Download the signed APKs from [GitHub Releases](https://github.com/dx9901mk5/DX_fileManager/releases/latest) (**Once Google Play is approved, only `DX_Helper` will remain on GitHub**):
-  - **`DX_fileManager-v<version>-full-release.apk`**: Transitional GitHub full edition (**valid until 2026/12/10**).
-  - **`DX_Helper-v<version>-release.apk`**: Dedicated Shizuku helper installer plugin for **DX File Manager** (works with both the **Google Play edition** and the **GitHub edition**—when installed, the Play edition automatically detects the plugin and reveals the Shizuku APK install option in the context menu; includes built-in GitHub self-update check & download/install).
+1. **Step 1 | Join the Tester Google Group**  
+   👉 [https://groups.google.com/g/dx-file-manager-testers](https://groups.google.com/g/dx-file-manager-testers) (`dx-file-manager-testers@googlegroups.com`)
+2. **Step 2 | Opt-in on the Web**  
+   👉 [https://play.google.com/apps/testing/com.dx9901mk5.filemanager](https://play.google.com/apps/testing/com.dx9901mk5.filemanager)
+3. **Step 3 | Install from Google Play (Android)**  
+   👉 [https://play.google.com/store/apps/details?id=com.dx9901mk5.filemanager](https://play.google.com/store/apps/details?id=com.dx9901mk5.filemanager)
 
 ---
 
-## 權限說明 / Permissions
+## DX輔助助手 (`DX_Helper`) 用途說明與下載
 
-- `MANAGE_EXTERNAL_STORAGE`（所有檔案存取權限）：用於瀏覽、搬移、壓縮與管理裝置內部儲存空間檔案。
-- `REQUEST_INSTALL_PACKAGES`（安裝未知應用）：用於直接安裝本機或下載的 APK 檔案（含自動更新）。
-- `INSTALL_SHORTCUT`：用於將任意檔案／資料夾建立至桌面捷徑。
-- 可於 App 內「設定與關於我 → 系統授權與權限連動」一鍵跳轉系統設定並自動定位至本 App。
+### 為什麼需要 `DX_Helper`？
+受限於 Google Play 商店政策規範，Play 版主程式不請求 `REQUEST_INSTALL_PACKAGES`（安裝未知應用）與 `QUERY_ALL_PACKAGES`（查詢所有已安裝套件）等敏感權限。因此我們將進階系統功能抽離為同簽名專屬外掛 **`DX_Helper`**，由 GitHub 獨立提供，**完全不影響 Play 版合規性**。
+
+### 安裝 `DX_Helper` 後可解鎖的功能
+安裝 **`DX_Helper`** 並搭配 **Google Play 版 DX檔案管理器** 後，主程式會自動偵測此外掛並開放以下功能：
+1. **讀寫 `Android/data` 與 `Android/obb` 受限系統目錄**：
+   - 未安裝外掛時 Play 版側邊欄會自動隱藏系統受限入口；安裝 `DX_Helper` 並授權 Shizuku 後，側邊欄即自動顯示 **`Android/data`** 與 **`Android/obb`** 快速入口，支援完整瀏覽、複製、搬移與刪除操作。
+2. **透過 Shizuku 靜默批次安裝 APK**：
+   - 在 Play 版長壓或選取 `.apk` 檔案時，功能選單會自動出現 **「用 DX Shizuku 靜默安裝」**，免去系統安裝器反覆確認。
+3. **已安裝應用程式列表與備份轉發分享**：
+   - Play 版側邊欄會自動開放 **「應用程式」** 專區，瀏覽裝置所有已安裝 App 並匯出備份 APK / Split APKs (`.apks`)。
+   - `DX_Helper` 本身亦內建 **「應用程式備份與轉發分享」** 介面，可直接搜尋、多選 App 打包後透過系統分享選單選擇 **DX檔案管理器** 儲存至指定資料夾。
+4. **外掛自我更新**：
+   - `DX_Helper` 內建「檢查外掛更新 (GitHub)」按鈕，可自動檢查並更新至最新外掛版本。
+
+### 下載 DX輔助助手 / Download `DX_Helper`
+前往 [GitHub Releases](https://github.com/dx9901mk5/DX_fileManager/releases/latest) 下載：
+- **`DX_Helper-v<version>-release.apk`**（固定簽名，可直接覆蓋更新）
+
+---
+
+## Why `DX_Helper`? (English Summary)
+To keep the Google Play main app 100% compliant (without `REQUEST_INSTALL_PACKAGES` or `QUERY_ALL_PACKAGES`), advanced system capabilities are provided through this same-signature companion plugin **`DX_Helper`**:
+- **Access `Android/data` & `Android/obb`**: Automatically reveals `Android/data` and `Android/obb` shortcuts in the Play edition sidebar once `DX_Helper` + Shizuku are active.
+- **Silent APK Installation via Shizuku**: Enables batch silent APK installation directly from the Play edition context menu.
+- **Installed Apps List & APK Backup/Share**: Unlocks the "Apps" category in the Play edition and includes a standalone **"App Backup & Share"** UI inside `DX_Helper` (supports Split APKs `.apks` and sharing directly into DX File Manager to save to any folder).
+- Download **`DX_Helper-v<version>-release.apk`** from [GitHub Releases](https://github.com/dx9901mk5/DX_fileManager/releases/latest).
 
 ---
 
 ## 開發者 / Developer
-
 - **dx9901mk5** — [GitHub Repository](https://github.com/dx9901mk5/DX_fileManager)
